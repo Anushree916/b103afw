@@ -22,9 +22,9 @@ public class HomePage {
 	
 	public boolean verifyHomePageIsDisplayed(WebDriverWait wait)
 	{
-		try 
+		try //we get timeoutexception if time is exceeded so write try catch block
 		{
-			wait.until(ExpectedConditions.visibilityOf(logoutBTN));
+			wait.until(ExpectedConditions.visibilityOf(logoutBTN));//VERFY WHETHER LOGOUT BUTTON IS VISIBLE ARE NOT
 			Reporter.log("Homepage is displayed",true);
 			return true;
 		}
