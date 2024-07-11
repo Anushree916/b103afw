@@ -25,7 +25,7 @@ public class ValidLogin extends BaseTest
 		loginPage.clickGoButton();
 //		4. verify home page is displayed
 		HomePage homePage=new HomePage(driver);
-		boolean result = homePage.verifyHomePageIsDisplayed(wait);
+		boolean result = homePage.verifyHomePageIsDisplayed(wait,test);
 		Assert.assertTrue(result);
 	}
 }
